@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joao Victor Santos Dumont | Fullstack & Data Dev</title>
+  <meta name="description" content="Portfólio de [Seu Nome], desenvolvedor Fullstack e analista de dados. Veja projetos, skills e formas de contato.">
+<meta name="keywords" content="Fullstack, Desenvolvedor, Data, React, Node.js, Python, Portfólio">
+<meta name="author" content="[Seu Nome]">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:title" content="Portfólio de [Seu Nome]">
+<meta property="og:description" content="Portfólio de [Seu Nome], desenvolvedor Fullstack e analista de dados.">
+<meta property="og:image" content="https://seusite.com/assets/img/preview.png">
+<meta property="og:url" content="https://seusite.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfólio de Joao Victor">
+<meta name="twitter:description" content="Desenvolvedor Fullstack e analista de dados – veja meus projetos e skills.">
+<meta name="twitter:image" content="https://seusite.com/assets/img/preview.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Joao Victor S. Dumont</h1>
+      <p>Desenvolvedor Fullstack & Analista de Dados</p>
+    </div>
+  </header>
+  
+  <nav class="nav">
+    <ul class="container nav-list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>Sou programador e desenvolvedor Fullstack com experiência em Front-End, Back-End, bancos de dados e análise de dados. Apaixonado por criar soluções elegantes e eficientes.</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="proj-grid">
+          <article class="card">
+            <img src="assets/img/proj1.jpg"  alt="Projeto 1" loading="lazy"
+            class="card-content">
+              <h3>Projeto 1</h3>
+              <p>App SPA em React com integração API REST.</p>
+              <div class="card-links">
+                <a href="#">Código</a>
+                <a href="#">Demo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Replicar .card para mais projetos -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills Técnicas</h2>
+        <canvas id="skillsChart"></canvas>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/xyzwadno" method="POST" class="contact-form">
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="message" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Joao Victor S. Dumont. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Chart.js e script principal -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.min.js"></script>
+</body>
+</html>
