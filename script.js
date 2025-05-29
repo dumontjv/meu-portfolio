@@ -1,5 +1,5 @@
 /* script.js */
-// Scroll suave
+// Smooth scroll
 const navLinks = document.querySelectorAll('.nav-list a');
 navLinks.forEach(link => {
   link.addEventListener('click', e => {
@@ -8,7 +8,7 @@ navLinks.forEach(link => {
   });
 });
 
-// Gráfico de skills (Chart.js)
+// Chart.js skills chart
 const ctx = document.getElementById('skillsChart').getContext('2d');
 new Chart(ctx, {
   type: 'bar',
