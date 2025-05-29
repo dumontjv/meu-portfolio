@@ -8,13 +8,25 @@ navLinks.forEach(link => {
   });
 });
 
+// Scroll reveal módulos
+const modules = document.querySelectorAll('.module');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('module--visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+modules.forEach(mod => observer.observe(mod));
+
 // Chart.js skills chart
 const ctx = document.getElementById('skillsChart').getContext('2d');
 new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ['JavaScript', 'React', 'Node.js', 'Python'],
-    datasets: [{ label: 'Nível (%)', data: [90, 80, 75, 70], backgroundColor: 'rgba(78,84,200,0.6)' }]
+    datasets: [{ label: 'Nível (%)', data: [90, 80, 75, 70], backgroundColor: 'rgba(0,216,255,0.6)' }]
   },
   options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
 });
